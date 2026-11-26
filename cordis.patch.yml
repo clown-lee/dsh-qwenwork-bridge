@@ -1,0 +1,6 @@
+# 注册千问办公的模型路由，不改动 profile 当前的默认模型。
+# 插件复用千问办公桌面端自己的登录态：不会发起额外的 OAuth，
+# 也不会把 token 复制出应用之外。
+- insert:
+    - id: llm-qwenwork
+      name: dsh-qwenwork-bridge

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <!--
+    dsh-qwenwork-bridge 的插件页图标：一个「把外部模型接进 Harness」的桥。
+    左边实心圆是千问办公自带的模型，右边空心圆是 Harness 的模型选择器，
+    中间两道反向弧线表示请求与回答双向流动 —— 插件做的就是这样一件事，
+    所以只用这一个主题，不加徽章、不加面板。墨迹外接框约 6..30，
+    四周留 6 单位，与官方图标在 36 网格里的边距一致。
+
+    颜色：千问办公的主色是青蓝，这里取 #0E9F9A 的饱和青，深浅主题下对比都够。
+  -->
+  <circle cx="11" cy="18" r="5" fill="#0E9F9A"/>
+  <circle cx="25" cy="18" r="5" fill="none" stroke="#0E9F9A" stroke-width="2.4"/>
+  <path d="M11 11.5C15.5 11.5 20.5 14 25 16.2" stroke="#0E9F9A" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <path d="M11 24.5C15.5 24.5 20.5 22 25 19.8" stroke="#0E9F9A" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+</svg>

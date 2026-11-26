@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH QwenWork Bridge",
+    "description": "Brings the QwenWork desktop app's built-in models into the model picker. It reuses the app's own sign-in, so enabling the plugin is all it takes: a \"QwenWork\" group appears with all 14 models (Qwen4-Max, DeepSeek-V4.1-Flash, GLM-5.4, Kimi-K3.1-Pro, ...). The upstream is OpenAI-compatible, with native streaming and tool calls; reasoning arrives as reasoning_content."
+  }
+}

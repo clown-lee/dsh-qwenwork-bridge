@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH 千问办公 Bridge",
+    "description": "把千问办公（QwenWork）自带的模型接进模型选择器：复用 App 自己的登录态，装完启用即出现「千问办公」分组，包含 Qwen4-Max、DeepSeek-V4.1-Flash、GLM-5.4、Kimi-K3.1-Pro 等全部 14 个模型。上游是 OpenAI 兼容接口，原生支持流式输出与工具调用，思考过程以 reasoning_content 原样透传。"
+  }
+}
