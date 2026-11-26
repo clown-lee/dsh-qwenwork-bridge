@@ -63,6 +63,18 @@ dsh plugin --profile desktop add github:clown-lee/dsh-qwenwork-bridge
 
 数据来自千问办公客户端自己用的账号上下文接口（`account-context` 的 `quota.remaining`），和 App 里看到的数字是同一个来源。
 
+## 每日签到
+
+千问办公的签到现在是**运营活动**：只有远端下发了 `announcement:credits-growth-card` 且 `checkinEnabled: true` 的账号才有入口，接口对其他人直接 404。所以插件这样处理：
+
+- 启动 8 秒后查一次状态，命中活动且今天没签就自动领；每个北京日 0 点后重跑
+- 没有活动（`supported: false`）就静默跳过 —— 这不是故障
+- 领到积分后积分角标会立刻去查新数字
+- 手动触发：`GET /plugins/dsh-qwenwork-bridge/checkin`（`?force=1` 跳过本地记忆）
+- 关掉：配置项 `autoCheckin: false`
+
+如果你在千问办公里从来没看到过「签到」，那就是这个账号没有活动，插件也不会空转。
+
 ## 它是怎么工作的
 
 ```text

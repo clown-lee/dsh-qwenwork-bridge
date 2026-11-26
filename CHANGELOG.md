@@ -2,6 +2,17 @@
 
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循 [SemVer](https://semver.org/lang/zh-CN/)。
 
+## [0.3.0] — 2026-11-26
+
+### 新增
+
+- **每日签到**：启动 8 秒后查一次 `daily-check-in` 状态，命中活动且今天没签就自动领；每个北京日 0 点后重跑一次。
+- `lib/checkin.js`：`GET/POST {gateway}/sash/api/v1/me/daily-check-in/{status,claim}`。
+- 活动是否开放由千问办公远端配置 `announcement:credits-growth-card` 决定，未投放的账号接口直接 404 —— 这种情况记成 `supported: false` 并静默跳过，不报错。
+- 领到积分后立刻让积分角标缓存失效，下一次刷新就是新数字。
+- 新路由 `GET /plugins/dsh-qwenwork-bridge/checkin`（`?force=1` 手动触发）。
+- 配置项 `autoCheckin`（默认开）。
+
 ## [0.2.0] — 2026-11-26
 
 ### 新增

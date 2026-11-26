@@ -2,7 +2,7 @@
   "name": "dsh-qwenwork-bridge",
   "displayName": "DSH 千问办公 Bridge",
   "description": "把千问办公（QwenWork）自带的模型接进 DeepSeek Harness — bring the QwenWork desktop app's built-in models into DeepSeek Harness with zero configuration.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "clown-lee",
   "keywords": [
     "dsh",
